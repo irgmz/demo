@@ -64,6 +64,7 @@
       }
 
       function onClick() {
+        console.log('Testing People');
         Rollbar.configure({
           payload: {
             person: {
@@ -80,12 +81,12 @@
     <br>
     <div class="some input stuff">
       People Tracking
-      <form>
+      <div>
         ID: <input id="id" type="text" />
         Username: <input id="username" type="text" />
         Email: <input id="email" type="text" />
         <input type="submit" value="Update Person" onclick="onClick()">
-      </form>
+      </div>
     </div>
     <br>
     <br>
